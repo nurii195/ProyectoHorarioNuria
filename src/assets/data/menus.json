@@ -1,0 +1,156 @@
+[{
+    "category": "ESO",
+    "subs": [{
+        "subcategory": "Primero",
+        "clases": [{
+            "clases": "e1a"
+          },
+          {
+            "clases": "e1b"
+          },
+          {
+            "clases": "e1c"
+          },
+          {
+            "clases": "e1d"
+          }
+
+        ]
+
+      },
+      {
+        "subcategory": "Segundo",
+        "clases": [{
+            "clases": "e2a"
+          },
+          {
+            "clases": "e2b"
+          },
+          {
+            "clases": "e2c"
+          },
+          {
+            "clases": "e2d"
+          }
+
+        ]
+      },
+      {
+        "subcategory": "Tercero",
+        "clases": [{
+            "clases": "3a"
+          },
+          {
+            "clases": "3b"
+          },
+          {
+            "clases": "3c"
+          },
+          {
+            "clases": "3d"
+          }
+
+        ]
+      },
+      {
+        "subcategory": "Cuarto",
+        "clases": [{
+            "clases": "4a"
+          },
+          {
+            "clases": "4b"
+          },
+          {
+            "clases": "4c"
+          }
+
+        ]
+      },
+      {
+        "subcategory": "PCPI",
+        "clases": [{
+            "clases": "1pcpi"
+          },
+          {
+            "clases": "2pcpi"
+          }
+        ]
+      },
+      {
+        "subcategory": "Diversificación",
+        "clases": [{
+            "clases": "3div"
+          },
+          {
+            "clases": "4div"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Bachillerato",
+    "subs": [{
+        "subcategory": "Primero",
+        "clases": [{
+            "clases": "1a"
+          },
+          {
+            "clases": "1b"
+          },
+          {
+            "clases": "1c"
+          }
+        ]
+      },
+      {
+        "subcategory": "Segundo",
+        "clases": [{
+            "clases": "2a"
+          },
+          {
+            "clases": "2b"
+          },
+          {
+            "clases": "2c"
+          }
+
+        ]
+      }
+    ]
+  },
+  {
+    "category": "FP",
+    "subs": [{
+        "subcategory": "DAM",
+        "clases": [{
+            "clases": "1inf"
+          },
+          {
+            "clases": "2inf"
+          }
+        ]
+      },
+      {
+        "subcategory": "Gestion Administrativa (medio)",
+        "clases": [{
+            "clases": "1ga(loe)"
+          },
+          {
+            "clases": "2ga"
+          }
+        ]
+      },
+      {
+        "subcategory": "Administración y Finanzas (superior)",
+        "clases": [{
+            "clases": "1af"
+          },
+          {
+            "clases": "2af"
+          }
+        ]
+      }
+    ]
+  }
+]

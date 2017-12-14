@@ -1,3 +1,5 @@
+import { HorarioPage } from './../pages/horario/horario';
+import { AccesoDatosJsonProvider } from './../providers/acceso-datos-json/acceso-datos-json';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -14,16 +16,19 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: any;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  mostrarNivel1 = null;
+  mostrarNivel2 = null;
+
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, public acceso: AccesoDatosJsonProvider) {
     this.initializeApp();
 
-    // used for an example of ngFor and navigation
-    this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
-    ];
+    this.acceso.getMenus()
+    .subscribe((response)=> {
+        this.pages = response;
+        console.log(this.pages);
+    });
 
   }
 
@@ -41,4 +46,38 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
   }
+
+
+  Level1(idx) {
+    if (this.isLevel1(idx)) {
+      this.mostrarNivel1 = null;
+    } else {
+      this.mostrarNivel1 = idx;
+    }
+  };
+
+  Level2(idx) {
+    if (this.isLevel2(idx)) {
+      this.mostrarNivel1 = null;
+      this.mostrarNivel2 = null;
+    } else {
+      this.mostrarNivel1 = idx;
+      this.mostrarNivel2 = idx;
+    }
+  };
+
+  isLevel1(idx) {
+    return this.mostrarNivel1 === idx;
+  };
+
+  isLevel2(idx) {
+    return this.mostrarNivel2 === idx;
+  };
+
+  openlist(c) {
+    //this.nav.push(HorarioPage, {clase: c});
+    this.nav.setRoot(HorarioPage, {clase: c});
+  }
+
+
 }
